@@ -1,6 +1,6 @@
-### Behave тестирование с помощью RestAssured проекта shop_kotlin
+### Behave тестирование с помощью RestAssured проекта kotlin-gradle-simple
 
-Тестируемый проект [https://github.com/cherepakhin/shop_kotlin](https://github.com/cherepakhin/shop_kotlin)
+Тестируемый проект [https://github.com/cherepakhin/kotlin-gradle-simple-restassured-test](https://github.com/cherepakhin/kotlin-gradle-simple-restassured-test)
 
 Для проведения тестов использован RestAssured<br/>
  [https://github.com/rest-assured/rest-assured](https://github.com/rest-assured/rest-assured/wiki/GettingStarted).
@@ -9,17 +9,17 @@
 
 Скрипты выполнять из папки проекта с тестами Rest Assured. 
 Перед запуском тестов нужно запустить сам проект:
-[https://github.com/cherepakhin/shop_kotlin](https://github.com/cherepakhin/shop_kotlin)
+[https://github.com/cherepakhin/kotlin-gradle-simple-restassured-test](https://github.com/cherepakhin/kotlin-gradle-simple-restassured-test)
 
 ### Env переменные
 
-Константы (адрес сервиса, REST пути и т.п.) заданы в [src/test/kotlin/ru/perm/v/shop_kotlin/restassured/CONST.kt](https://github.com/cherepakhin/shop_kotlin_reastassured_test/blob/dev/src/test/kotlin/ru/perm/v/shop_kotlin/restassured/CONSTS.kt):
+Константы (адрес сервиса, REST пути и т.п.) заданы в [src/test/kotlin/ru/perm/v/kotlin-gradle-simple-restassured-test/restassured/CONST.kt](https://github.com/cherepakhin/kotlin-gradle-simple-restassured-test_reastassured_test/blob/dev/src/test/kotlin/ru/perm/v/kotlin-gradle-simple-restassured-test/restassured/CONSTS.kt):
 
 ````kotlin
 class CONSTS {
  companion object {
-  val SHOP_KOTLIN_IP = System.getenv("SHOP_KOTLIN_IP") ?: "127.0.0.1:8980"
-  val HOST = "http://"+SHOP_KOTLIN_IP +"/shop_kotlin/api"
+  val kotlin-gradle-simple-restassured-test_IP = System.getenv("kotlin-gradle-simple-restassured-test_IP") ?: "127.0.0.1:8980"
+  val HOST = "http://"+kotlin-gradle-simple-restassured-test_IP +"/kotlin-gradle-simple-restassured-test/api"
   val ECHO_PATH = HOST + "/echo/"
   val GROUP_PATH = HOST + "/group_product/"
   val PRODUCT_PATH = HOST + "/product/"
@@ -27,30 +27,30 @@ class CONSTS {
 }
 ````
 
-SHOP_KOTLIN_IP - адрес и порт сервиса. По умолчанию: __127.0.0.1:8980__. Установка переменных:
+kotlin-gradle-simple-restassured-test_IP - адрес и порт сервиса. По умолчанию: __127.0.0.1:8980__. Установка переменных:
 
 ````shell
-$ export SHOP_KOTLIN_IP=192.168.1.57:8980
-$ echo $SHOP_KOTLIN_IP
+$ export kotlin-gradle-simple-restassured-test_IP=192.168.1.57:8980
+$ echo $kotlin-gradle-simple-restassured-test_IP
 192.168.1.57:8980
 ````
 
 ### Проведение тестов
 
 ```shell
-shop_kotlin-restassured-test$ mvn clean test
+kotlin-gradle-simple-restassured-test-restassured-test$ mvn clean test
 ```
 
 Просмотр отчета в браузере:
 
 ```shell
-shop_kotlin_restassured_test$ allure serve target/surefire-reports/
+kotlin-gradle-simple-restassured-test_restassured_test$ allure serve target/surefire-reports/
 ```
 
 Проведение КОНКРЕТНОГО теста:
 
 ````shell
-shop_kotlin_restassured_test$ mvn clean test -Dtest=EchoRestTest
+kotlin-gradle-simple-restassured-test_restassured_test$ mvn clean test -Dtest=EchoRestTest
 ````
 
 ### Результаты behave тестирования
@@ -100,9 +100,9 @@ https://allure-framework.github.io/allure-demo/5/#suites/a2891ce60e520f56ae25e6c
 ~/prog/java/allure-examples/allure-junit5
 
 ````shell
-shop_kotlin-restassured-test$ cd ~/<catalog project>
-shop_kotlin-restassured-test$ mvn clean test
-shop_kotlin-restassured-test$ allure serve allure-results/
+kotlin-gradle-simple-restassured-test-restassured-test$ cd ~/<catalog project>
+kotlin-gradle-simple-restassured-test-restassured-test$ mvn clean test
+kotlin-gradle-simple-restassured-test-restassured-test$ allure serve allure-results/
 ````
 
 ### Grafana
