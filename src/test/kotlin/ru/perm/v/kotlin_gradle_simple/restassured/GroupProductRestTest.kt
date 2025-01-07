@@ -1,4 +1,4 @@
-package ru.perm.v.shop_kotlin.restassured
+package ru.perm.v.kotlin_gradle_simple.restassured
 
 import com.fasterxml.jackson.core.type.TypeReference
 import com.fasterxml.jackson.databind.ObjectMapper
@@ -9,7 +9,7 @@ import org.apache.http.HttpStatus
 import org.junit.jupiter.api.BeforeAll
 import org.junit.jupiter.api.DisplayName
 import org.junit.jupiter.api.Test
-import ru.perm.v.shop_kotlin.restassured.dto.GroupProductDTO
+import ru.perm.v.kotlin_gradle_simple.restassured.dto.GroupProductDTO
 import java.io.FileOutputStream
 import java.util.*
 import kotlin.test.assertEquals

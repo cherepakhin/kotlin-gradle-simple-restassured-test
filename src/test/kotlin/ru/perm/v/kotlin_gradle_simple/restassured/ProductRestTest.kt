@@ -1,4 +1,4 @@
-package ru.perm.v.shop_kotlin.restassured
+package ru.perm.v.kotlin_gradle_simple.restassured
 
 import com.fasterxml.jackson.databind.ObjectMapper
 import io.restassured.RestAssured
@@ -7,8 +7,8 @@ import org.junit.jupiter.api.Disabled
 import org.junit.jupiter.api.DisplayName
 import org.junit.jupiter.api.Test
 import org.slf4j.LoggerFactory
-import ru.perm.v.shop_kotlin.restassured.CONSTS.Companion.PRODUCT_PATH
-import ru.perm.v.shop_kotlin.restassured.dto.ProductDTO
+import ru.perm.v.kotlin_gradle_simple.restassured.CONSTS.Companion.PRODUCT_PATH
+import ru.perm.v.kotlin_gradle_simple.restassured.dto.ProductDTO
 import kotlin.test.assertEquals
 
 @DisplayName("Products tests /product")

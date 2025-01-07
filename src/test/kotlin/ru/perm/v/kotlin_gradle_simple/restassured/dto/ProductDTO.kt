@@ -1,4 +1,4 @@
-package ru.perm.v.shop_kotlin.restassured.dto
+package ru.perm.v.kotlin_gradle_simple.restassured.dto
 
 class ProductDTO {
     var n: Long = -1L
