@@ -112,3 +112,20 @@ kotlin-gradle-simple-restassured-test-restassured-test$ allure serve allure-resu
 Timeout(10s)
 
 ![Нагрузка при проведении тестов](doc/grafana_10s.png)
+
+Просмотр путей внешних репозиториев:
+
+````shell
+$ git remote show origin
+
+* внешний репозиторий origin
+  URL для извлечения: https://github.com/cherepakhin/kotlin-gradle-simple-restassured-test.git
+  URL для отправки: https://github.com/cherepakhin/kotlin-gradle-simple-restassured-test.git
+  HEAD ветка: dev
+  Внешняя ветка:
+  dev отслеживается
+  Локальная ветка, настроенная для «git pull»:
+  dev будет слита с внешней веткой dev
+  Локальная ссылка, настроенная для «git push»:
+  dev будет отправлена в dev (уже актуальна)
+````

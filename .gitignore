@@ -12,3 +12,4 @@ target/
 bin/
 allure
 allure-results/
+/.gigaide/gigaide.properties
